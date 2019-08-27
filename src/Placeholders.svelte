@@ -2,7 +2,6 @@
     import {Placeholder} from 'jss-svelte';
 
     export let routeData = {};
-
 </script>
 
 {#each Object.entries(routeData.placeholders) as placeholder}

@@ -8,6 +8,8 @@
   const sitecoreContext = new SitecoreContext();
   sitecoreContext.setComponentFactory(componentFactory);
   setSitecoreContext(sitecoreContext);
+
+  
 </script>
 
 <Placeholders routeData={routeData.sitecore.route} />
