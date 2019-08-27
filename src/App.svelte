@@ -1,5 +1,6 @@
 <script>
   import componentFactory from "./componentFactory.js";
+  import Placeholders from './Placeholders.svelte';
   import { setSitecoreContext, SitecoreContext } from "jss-svelte";
   
   export let routeData = null;
@@ -8,3 +9,5 @@
   sitecoreContext.setComponentFactory(componentFactory);
   setSitecoreContext(sitecoreContext);
 </script>
+
+<Placeholders routeData={routeData.sitecore.route} />

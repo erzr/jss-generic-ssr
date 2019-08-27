@@ -2,6 +2,4 @@
     export let fields = {};
 </script>
 
-{#each fields as field}
-    <h1>{field.name}</h1>
-{/each}
+<h1>Component!</h1>

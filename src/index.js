@@ -6,10 +6,27 @@ function getIndexHtml() {
     return html;
 }
 
+function assertReplace(string, value, replacement) {
+    let success = false;
+    const result = string.replace(value, () => {
+      success = true;
+      return replacement;
+    });
+  
+    if (!success) {
+      throw new Error(
+        `Unable to match replace token '${value}' in public/index.html template. If the HTML shell for the app is modified, also fix the replaces in server.js. Server-side rendering has failed!`
+      );
+    }
+  
+    return result;
+  }
+  
+
 export function renderView(callback, path, data, viewBag) {
     const state = parseServerData(data, viewBag);
 
-    let renderedApp = App.render({ path: path, routeData: state, graphQLClient, dictionary });
+    let renderedApp = App.render({ path: path, routeData: state });
 
     const { html } = renderedApp;
 
