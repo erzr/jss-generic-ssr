@@ -6,14 +6,7 @@
 
 <section>
   <div>
-    <p>
-      <strong>Component Name: </strong>
-      {rendering.componentName}
-      <br />
-      <strong>Data Source: </strong>
-      {rendering.componentName}
-      <br />
-    </p>
+    <h4>{rendering.componentName} ({rendering.componentName})</h4>
   </div>
   <div>
     <Fields fields={rendering.fields}/>
