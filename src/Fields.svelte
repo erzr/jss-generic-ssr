@@ -5,7 +5,6 @@
 
   const getFieldType = fieldMarkup => {
       const result = fieldMarkup.match(/scfieldtype="(.*?)"/i);
-      console.log(fieldMarkup);
     return (result && result[1]) || "n/a";
   };
 </script>
