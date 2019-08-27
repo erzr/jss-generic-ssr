@@ -1,5 +1,5 @@
 <script>
-    export let fields = [];
+    export let fields = {};
 </script>
 
 {#each fields as field}

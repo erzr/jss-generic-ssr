@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@sitecore-jss/sitecore-jss": "^12.0.0",
     "cross-env": "^5.2.0",
     "jss-svelte": "^1.0.5",
     "rollup": "^1.20.2",
