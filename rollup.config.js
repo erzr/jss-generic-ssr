@@ -14,7 +14,7 @@ export default {
 		sourcemap: true,
 		format: 'cjs',
 		name: 'app',
-		file: 'build/index.js'
+		file: 'build/server.bundle.js'
 	},
 	plugins: [
 		svelte({
